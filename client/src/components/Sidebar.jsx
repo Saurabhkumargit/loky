@@ -22,6 +22,10 @@ const Sidebar = ({sidebarOpen, setSidebarOpen}) => {
           Create Post
         </Link>
       </div>
+
+      <div>
+        
+      </div>
     </div>
   )
 }
