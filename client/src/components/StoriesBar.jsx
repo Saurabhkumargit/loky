@@ -27,6 +27,22 @@ const StoriesBar = () => {
                 </div>
             </div>
             {/* stories cards */}
+            {
+                stories.map((story) => (
+                    <div key={index} >
+                    
+                        <img src={story.image} alt="story" className='absolute size-8 top-3 left-3 z-10 rounded-full ring ring-gray-100 shadow' />
+
+                        <p className='absolute top-18 left-3 text-white/60 text-sm truncate max-w-24'>
+                            {story.content}
+                        </p>
+                        <p className='absolute-bottom right-2 bottom-1 z-10 text-white text-xs'>
+                            {story.createdAt}
+                        </p>
+                    </div>
+                ) )
+                        
+            }
         </div>
     </div>
   )
